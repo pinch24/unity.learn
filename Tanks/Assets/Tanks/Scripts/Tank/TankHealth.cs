@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class TankHealth : MonoBehaviour
 {
@@ -50,7 +50,7 @@ public class TankHealth : MonoBehaviour
 	{
         m_Slider.value = m_CurrentHealth;
         
-        m_FillImage.color = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, m_CurrentHealth / m_StartingHealth);
+        m_FillImage.tintColor = Color.Lerp(m_ZeroHealthColor, m_FullHealthColor, m_CurrentHealth / m_StartingHealth);
 	}
 
 
